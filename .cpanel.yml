@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export PATH=$HOME/bin:$PATH
+    - npm install
+    - npm run build
+    - cp -r build/* ~/public_html/
